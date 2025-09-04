@@ -17,10 +17,14 @@ createRoot(document.getElementById("root")!).render(
     <ThemeProvider>
       <FullScreenContainer>
         <ConsoleTemplate
+          title="Singular DEV"
           connectParams={{
             connectionUrl: "/api/offer",
           }}
           transportType="smallwebrtc"
+          noBotVideo
+          noUserVideo
+          noLogo
         />
       </FullScreenContainer>
     </ThemeProvider>
